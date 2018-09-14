@@ -25,3 +25,4 @@ git remote add origin <remote repository URL>
 git push -u origin/master
 git pull
 git push origin master
+git remote: show remote repositories
