@@ -23,3 +23,5 @@ git merge old_intro: throw away master branch and merge the changes from new bra
 -Use on GitHub
 git remote add origin <remote repository URL>
 git push -u origin/master
+git pull
+git push origin master
