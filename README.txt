@@ -19,3 +19,7 @@ git checkout COMMIT_3 -b old_intro: create a new branch called old_intro
 git checkout master
 git merge old_intro: throw away master branch and merge the changes from new branch
 * for conflicts refer to notes
+
+-Use on GitHub
+git remote add origin <remote repository URL>
+git push -u origin/master
