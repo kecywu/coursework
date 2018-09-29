@@ -103,3 +103,27 @@ filter(isodd,b)
 sum(1/n^2 for n=1:1000)    # PSID: average, sum, filter, in structure
 
 # Types (constructors and methods) and Named Tuples
+# Tuples are ordered, elements cannot be changed
+a = ("This is a tuple",2018)
+zip(v1,m1)  # create tuples using zip
+# Dictionaries are collections with keys are values of elements, used for texts
+a = Dict("University of Pennsylvania" => "Philadelphia", "Boston College" =>"Boston")
+a["University of Pennsylvania"]  # access one key
+a["Harvard"] = "Cambridge"       # adds an additional key
+delete!(a,"Harvard")             # deletes a key
+keys(a)
+values(a)
+haskey(a,"University of Pennsylvania") # returns true
+haskey(a,"MIT") # returns false
+
+# Composite types - struct
+
+# Metaprogramming: write code that can modify itself
+# refer to document
+
+# Multiple files
+include("intro.jl")
+# Timing
+tic()
+toc()
+@time main()        # measure time of function main()
